@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ya</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="script2.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" id="nav-item">Home</a>
+            <a href="#" id="nav-item">About</a>
+
+            <section class="search">
+                <form action="https://www.google.com/search">
+                    <input class="search-entry" type="text" name="q" id="" placeholder="Searching for setails">
+
+                    <input type="button" value="🔎">
+                </form>
+            </section>
+        </nav>
+    </header>
+
+    <section class="judul">
+        <span id="logo">MEALS API</span>
+    </section>
+    
+    <main>
+        <article id="content"></article>
+        <aside>
+            <div class="profile-card">
+                <img src="assets/b.jpg" alt="">
+                <div class="profile-info">
+                    <p>Created by</p>
+                    <h1>Jessikoy</h1>
+                </div>
+                <div class="socials">
+                    <a href="https://instagram.com" class="icon instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com" class="icon linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a href="mailto:your.email@example.com" class="icon mail" target="_blank"><i class="bx bx-envelope"></i></a>
+                </div>
+                <div>
+                    <button style="display: block;margin: 30px auto; font-size: 30px;">Load More</button>
+                </div>
+            </div>
+        </aside>
+        <div style="clear: both;"></div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="yearText"></span></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="mealCard" type="text/x-handlebars-template">
+        {{#each meals}}
+        <div class="card">
+            <div class="left" style="background-image: url('{{sprite}}');"></div>
+            <div class="right">
+                <h1 class="meal-name">{{name}}</h1>
+                <a href="#" class="meal-api" target="_blank">Name: {{name}}</a>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</body>
+</html>

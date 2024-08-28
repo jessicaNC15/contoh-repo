@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.container {
+            min-width: 300px;
+            max-width: 500px;
+            margin: 0px auto;
+        }
+
+        section.page {
+            width: 100%;
+            min-height: 100vh;
+            background-color: salmon;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(image.jpg);
+        }
+
+        p, h1 {
+            text-align: center;
+        }
+
+        section.page.one {
+            gap: 300pt;
+        }
+
+        section.page.one > div > h1 {
+            font-size: 30pt;
+        }
+
+        section.page.two {
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        section.page.three {
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        section.page.four{
+            justify-content: space-evenly;
+            font-size: 25px;
+        }
+
+        div.card {
+            padding: 10pt;
+            width: 250pt;
+            min-height: 300pt;
+            background-color: rgb(235, 211, 171);
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div.circle {
+            width: 150pt;
+            height: 150pt;
+            border-radius: 75pt;
+            background-size: cover;
+            background-image: url("HEHE.jpg");
+            background-color: greenyellow;
+            margin-bottom: 50px;
+        }
+
+        div.line {
+            width: 150px;
+            height: 1px;
+            background-color: black;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="page one">
+            <div class="title">
+                <p>The Wedding of</p>
+                <h1>Jaejae & Woonie</h1>
+                <p>Minggu, 17 September 2023</p>
+            </div>
+            <div class="guest-name">
+                <p style="font-size: 20px;">Kepada Yth.</p>
+                <p style="font-size: 20px;">Park Jay</p>
+            </div>
+        </section>
+        <section class="page two">
+            <h2>The Beloved</h2>
+            <h1>Jaejae & Woonie</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta dolorem nesciunt neque quas animi incidunt et, tenetur, repellat nostrum iusto sequi, id quos quibusdam? Molestiae odio atque error sunt!</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>Jaejaee</h1>
+                <div class="line"></div>
+                <p>Putri dari Khayangan</p>
+                <p>Jaehyun</p>
+                <p>🤝🏻</p>
+                <p>Rose</p>
+            </div>
+        </section>
+        <section class="page three">
+            <h2>The Beloved</h2>
+            <h1>Jaejae & Woonie</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta dolorem nesciunt neque quas animi incidunt et, tenetur, repellat nostrum iusto sequi, id quos quibusdam? Molestiae odio atque error sunt!</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>Jungwoonie</h1>
+                <div class="line"></div>
+                <p>Putra gatau dri mna</p>
+                <p>Heesung</p>
+                <p>🤝🏻</p>
+                <p>Yunjin</p>
+        </section>
+
+        <section class="page four">
+            <section class="judul">
+                <p>The Wedding of</p>
+                <h1>Jessikoy & Woonie</h1>
+                <p>Minggu, 17 September 2023</p>
+            </section>
+            <section class="info">
+                <p>Hari / Tanggal : Palembang, 32 Januari 2023</p>
+                <p>Lokasi : Cari Sendiri!</p>
+                <p>Waktu Pelaksanaan : Masih mimpi kak</p>
+            </section>
+            <section class="footer">
+                <p>Harap datang, trims 🤝🏻</p>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
